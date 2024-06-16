@@ -2,8 +2,6 @@ targetScope = 'subscription'
 //parameters
 param location string
 param projectName string
-param storageAccountKind string
-param storageAccountSKU string
 
 
 
@@ -26,8 +24,7 @@ module storageAccount 'storageAccount.bicep' = {
   params: {
     projectName: projectName
     location: location
-    storageAccountKind: storageAccountKind
-    storageAccountSKU: storageAccountSKU
+  
   }
   
 }
